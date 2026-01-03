@@ -59,5 +59,5 @@ class ProxyHandler(BaseHTTPRequestHandler):
             self.wfile.write(str(e).encode())
 
 if __name__ == '__main__':
-    server = HTTPServer(('0.0.0.0', 8080), ProxyHandler)
+    server = HTTPServer(('0.0.0.0', 80), ProxyHandler)
     server.serve_forever()
